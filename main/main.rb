@@ -23,33 +23,6 @@ grammar = Grammar.new(
     version: "",
 )
 
-{
-    "name": "csv syntax",
-    "scopeName": "text.csv",
-    "fileTypes": ["csv"],
-    "patterns": [
-        {
-            "match": "((?: *\"(?:[^\"]*\"\")*[^\"]*\" *(?:,|$))|(?:[^,]*(?:,|$)))?((?: *\"(?:[^\"]*\"\")*[^\"]*\" *(?:,|$))|(?:[^,]*(?:,|$)))?((?: *\"(?:[^\"]*\"\")*[^\"]*\" *(?:,|$))|(?:[^,]*(?:,|$)))?((?: *\"(?:[^\"]*\"\")*[^\"]*\" *(?:,|$))|(?:[^,]*(?:,|$)))?((?: *\"(?:[^\"]*\"\")*[^\"]*\" *(?:,|$))|(?:[^,]*(?:,|$)))?((?: *\"(?:[^\"]*\"\")*[^\"]*\" *(?:,|$))|(?:[^,]*(?:,|$)))?((?: *\"(?:[^\"]*\"\")*[^\"]*\" *(?:,|$))|(?:[^,]*(?:,|$)))?((?: *\"(?:[^\"]*\"\")*[^\"]*\" *(?:,|$))|(?:[^,]*(?:,|$)))?((?: *\"(?:[^\"]*\"\")*[^\"]*\" *(?:,|$))|(?:[^,]*(?:,|$)))?((?: *\"(?:[^\"]*\"\")*[^\"]*\" *(?:,|$))|(?:[^,]*(?:,|$)))?",
-            "name": "rainbowgroup",
-            "captures": {
-                "1": {"name": "rainbow1"},
-                "2": {"name": "keyword.rainbow2"},
-                "3": {"name": "entity.name.function.rainbow3"},
-                "4": {"name": "comment.rainbow4"},
-                "5": {"name": "string.rainbow5"},
-                "6": {"name": "variable.parameter.rainbow6"},
-                "7": {"name": "constant.numeric.rainbow7"},
-                "8": {"name": "entity.name.type.rainbow8"},
-                "9": {"name": "markup.bold.rainbow9"},
-                "10": {"name": "invalid.rainbow10"}
-            }
-        }
-
-    ],
-    "uuid": "ca03e352-04ef-4340-9a6b-9b99aae1c418"
-}
-
-
 # 
 #
 # Setup Grammar
@@ -101,7 +74,7 @@ grammar = Grammar.new(
             zeroLengthStart?: true,
             end_pattern: Pattern.new(
                 tag_as: "punctuation.definition.entry",
-                match: lookAheadFor("\n"),
+                match: lookAheadFor(/$/),
             ),
             apply_end_pattern_last: true,
             includes: [
@@ -112,7 +85,7 @@ grammar = Grammar.new(
                     match: /(?:\G|\A)[^"#{separator}]*/,
                     tag_as: "string.unquoted #{column_tag} csv.column#{column_number}"
                 ).then(
-                    grammar[:separator].or(lookAheadFor("\n")),
+                    grammar[:separator].or(lookAheadFor(/$/)),
                 ),
                 PatternRange.new(
                     tag_as: "string.quoted.double #{column_tag} csv.column#{column_number}",
@@ -131,7 +104,7 @@ grammar = Grammar.new(
                             tag_as: "punctuation.definition.string",
                             match: '"',
                         ).then(/ */).then(
-                           grammar[:separator].or(lookAheadFor("\n")),
+                           grammar[:separator].or(lookAheadFor(/$/)),
                         )
                     ),
                     includes: [
@@ -143,8 +116,8 @@ grammar = Grammar.new(
                 # 
                 PatternRange.new(
                     tag_as: "meta.#{column_number}.inner",
-                    start_pattern: lookBehindFor(separator),
-                    end_pattern: lookAheadFor("\n"),
+                    start_pattern: lookBehindFor(separator).lookAheadToAvoid(/$/),
+                    end_pattern: lookAheadFor(/$/),
                     includes: [
                         *children,
                     ],
@@ -152,28 +125,80 @@ grammar = Grammar.new(
             ],
         )
     end
-    grammar[:item] = generateRow[column_tag:"rainbow1", column_number:1, children:[
-        generateRow[column_tag:"keyword.rainbow2", column_number:2, children:[
-            generateRow[column_tag:"entity.name.function.rainbow3", column_number:3, children:[
-                generateRow[column_tag:"comment.rainbow4", column_number:4, children:[
-                    generateRow[column_tag:"string.rainbow5", column_number:5, children:[
-                        generateRow[column_tag:"variable.parameter.rainbow6", column_number:6, children:[
-                            generateRow[column_tag:"constant.numeric.rainbow7", column_number:7, children:[
-                                generateRow[column_tag:"entity.name.type.rainbow8", column_number:8, children:[
-                                    generateRow[column_tag:"markup.bold.rainbow9", column_number:9, children:[
-                                        generateRow[column_tag:"invalid.rainbow10", column_number:10, children:[
-                                            :item,
+    grammar[:item] = PatternRange.new(
+        tag_as: "meta.1",
+        start_pattern: Pattern.new(/(?:^|\G|\A)/),
+        zeroLengthStart?: true,
+        end_pattern: Pattern.new(
+            tag_as: "punctuation.definition.entry",
+            match: lookAheadFor(/$/),
+        ),
+        apply_end_pattern_last: true,
+        includes: [
+            # 
+            # only match the first entry in the row
+            # 
+            Pattern.new( # simple pattern
+                match: /(?:\G|\A)[^"#{separator}]*/,
+                tag_as: "string.unquoted rainbow1 csv.column1"
+            ).then(
+                grammar[:separator].or(lookAheadFor(/$/)),
+            ),
+            PatternRange.new(
+                tag_as: "string.quoted.double rainbow1 csv.column1",
+                zeroLengthStart?: true,
+                start_pattern: Pattern.new(
+                    Pattern.new(
+                        /(?:\G|\A) */,
+                    ).then(
+                        tag_as: "punctuation.definition.string",
+                        match: '"',
+                    )
+                ),
+                apply_end_pattern_last: true,
+                end_pattern: Pattern.new(
+                    Pattern.new(
+                        tag_as: "punctuation.definition.string",
+                        match: '"',
+                    ).then(/ */).then(
+                        grammar[:separator].or(lookAheadFor(/$/)),
+                    )
+                ),
+                includes: [
+                    :escape,
+                ],
+            ),
+            # 
+            # match the rest of the row (head recursion)
+            # 
+            PatternRange.new(
+                tag_as: "meta.1.inner",
+                start_pattern: lookBehindFor(separator).lookAheadToAvoid(/$/),
+                end_pattern: lookAheadFor(/$/),
+                includes: [
+                    generateRow[column_tag:"keyword.rainbow2", column_number:2, children:[
+                        generateRow[column_tag:"entity.name.function.rainbow3", column_number:3, children:[
+                            generateRow[column_tag:"comment.rainbow4", column_number:4, children:[
+                                generateRow[column_tag:"string.rainbow5", column_number:5, children:[
+                                    generateRow[column_tag:"variable.parameter.rainbow6", column_number:6, children:[
+                                        generateRow[column_tag:"constant.numeric.rainbow7", column_number:7, children:[
+                                            generateRow[column_tag:"entity.name.type.rainbow8", column_number:8, children:[
+                                                generateRow[column_tag:"markup.bold.rainbow9", column_number:9, children:[
+                                                    generateRow[column_tag:"invalid.rainbow10", column_number:10, children:[
+                                                        :item,
+                                                    ]]
+                                                ]]
+                                            ]]
                                         ]]
                                     ]]
                                 ]]
                             ]]
                         ]]
                     ]]
-                ]]
-            ]]
-        ]]
-    ]]
-
+                ],
+            )
+        ],
+    )
 #
 # Save
 #
