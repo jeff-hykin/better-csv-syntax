@@ -1,0 +1,233 @@
+- source: a
+  scopesBegin:
+    - meta.1
+  scopes:
+    - string.unquoted
+    - rainbow1
+    - text.csv.column1
+- source: ','
+  scopes:
+    - punctuation.definition.entry
+- source: b
+  scopesBegin:
+    - meta.1.inner
+    - meta.2
+  scopes:
+    - string.unquoted
+    - keyword.rainbow2
+    - text.csv.column2
+- source: ','
+  scopes:
+    - punctuation.definition.entry
+- source: '"'
+  scopesBegin:
+    - meta.2.inner
+    - meta.3
+    - string.quoted.double
+    - entity.name.function.rainbow3
+    - text.csv.column3
+  scopes:
+    - punctuation.definition.string
+- source: c
+- source: '"'
+  scopes:
+    - punctuation.definition.string
+- source: ','
+  scopes:
+    - punctuation.definition.entry
+  scopesEnd:
+    - string.quoted.double
+    - entity.name.function.rainbow3
+    - text.csv.column3
+- source: d
+  scopesBegin:
+    - meta.3.inner
+    - meta.4
+  scopes:
+    - string.unquoted
+    - comment.rainbow4
+    - text.csv.column4
+- source: ','
+  scopes:
+    - punctuation.definition.entry
+- source: '"'
+  scopesBegin:
+    - meta.4.inner
+    - meta.5
+    - string.quoted.double
+    - string.rainbow5
+    - text.csv.column5
+  scopes:
+    - punctuation.definition.string
+- source: ' e'
+- source: '"'
+  scopes:
+    - punctuation.definition.string
+- source: ','
+  scopes:
+    - punctuation.definition.entry
+  scopesEnd:
+    - string.quoted.double
+    - string.rainbow5
+    - text.csv.column5
+- source: f
+  scopesBegin:
+    - meta.5.inner
+    - meta.6
+  scopes:
+    - string.unquoted
+    - variable.parameter.rainbow6
+    - text.csv.column6
+- source: ','
+  scopes:
+    - punctuation.definition.entry
+- source: g
+  scopesBegin:
+    - meta.6.inner
+    - meta.7
+  scopes:
+    - string.unquoted
+    - constant.numeric.rainbow7
+    - text.csv.column7
+- source: ','
+  scopes:
+    - punctuation.definition.entry
+- source: h
+  scopesBegin:
+    - meta.7.inner
+    - meta.8
+  scopes:
+    - string.unquoted
+    - entity.name.type.rainbow8
+    - text.csv.column8
+- source: ','
+  scopes:
+    - punctuation.definition.entry
+- source: i
+  scopesBegin:
+    - meta.8.inner
+    - meta.9
+  scopes:
+    - string.unquoted
+    - markup.bold.rainbow9
+    - text.csv.column9
+- source: ','
+  scopes:
+    - punctuation.definition.entry
+- source: j
+  scopesBegin:
+    - meta.9.inner
+    - meta.10
+  scopes:
+    - string.unquoted
+    - invalid.rainbow10
+    - text.csv.column10
+- source: ','
+  scopes:
+    - punctuation.definition.entry
+- source: k
+  scopesBegin:
+    - meta.10.inner
+    - meta.1
+  scopes:
+    - string.unquoted
+    - rainbow1
+    - text.csv.column1
+- source: ','
+  scopes:
+    - punctuation.definition.entry
+- source: l
+  scopesBegin:
+    - meta.1.inner
+    - meta.2
+  scopes:
+    - string.unquoted
+    - keyword.rainbow2
+    - text.csv.column2
+- source: ','
+  scopes:
+    - punctuation.definition.entry
+- source: m
+  scopesBegin:
+    - meta.2.inner
+    - meta.3
+  scopes:
+    - string.unquoted
+    - entity.name.function.rainbow3
+    - text.csv.column3
+- source: ','
+  scopes:
+    - punctuation.definition.entry
+- source: 'n'
+  scopesBegin:
+    - meta.3.inner
+    - meta.4
+  scopes:
+    - string.unquoted
+    - comment.rainbow4
+    - text.csv.column4
+- source: ','
+  scopes:
+    - punctuation.definition.entry
+- source: o
+  scopesBegin:
+    - meta.4.inner
+    - meta.5
+  scopes:
+    - string.unquoted
+    - string.rainbow5
+    - text.csv.column5
+- source: ','
+  scopes:
+    - punctuation.definition.entry
+- source: p
+  scopesBegin:
+    - meta.5.inner
+    - meta.6
+  scopes:
+    - string.unquoted
+    - variable.parameter.rainbow6
+    - text.csv.column6
+- source: ','
+  scopes:
+    - punctuation.definition.entry
+- source: q
+  scopesBegin:
+    - meta.6.inner
+    - meta.7
+  scopes:
+    - string.unquoted
+    - constant.numeric.rainbow7
+    - text.csv.column7
+- source: ','
+  scopes:
+    - punctuation.definition.entry
+- source: r
+  scopesBegin:
+    - meta.7.inner
+    - meta.8
+  scopes:
+    - string.unquoted
+    - entity.name.type.rainbow8
+    - text.csv.column8
+- source: ','
+  scopes:
+    - punctuation.definition.entry
+- source: s
+  scopesBegin:
+    - meta.8.inner
+    - meta.9
+  scopes:
+    - string.unquoted
+    - markup.bold.rainbow9
+    - text.csv.column9
+- source: ','
+  scopes:
+    - punctuation.definition.entry
+- source: t
+  scopes:
+    - meta.9.inner
+    - meta.10
+    - string.unquoted
+    - invalid.rainbow10
+    - text.csv.column10

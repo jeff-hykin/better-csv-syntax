@@ -1,0 +1,160 @@
+- source: Article Title
+  scopesBegin:
+    - meta.1.csv
+  scopes:
+    - string.unquoted.csv
+    - rainbow1.csv
+    - text.csv.column1.csv
+- source: Article Text
+  scopesBegin:
+    - meta.1.inner.csv
+    - meta.2.csv
+  scopes:
+    - string.unquoted.csv
+    - keyword.rainbow2.csv
+    - text.csv.column2.csv
+- source: Link
+  scopes:
+    - meta.2.inner.csv
+    - meta.3.csv
+    - string.unquoted.csv
+    - entity.name.function.rainbow3.csv
+    - text.csv.column3.csv
+  scopesEnd:
+    - meta.1.inner.csv
+    - meta.2.csv
+- source: $3.4 Million Fraud Victimizes Alabama's Largest Credit Union
+  scopes:
+    - string.unquoted.csv
+    - rainbow1.csv
+    - text.csv.column1.csv
+- source: '"'
+  scopesBegin:
+    - meta.1.inner.csv
+    - meta.2.csv
+    - string.quoted.double.csv
+    - keyword.rainbow2.csv
+    - text.csv.column2.csv
+  scopes:
+    - punctuation.definition.string.csv
+- source: "Police are investigating a $3.4 million fraud scheme that victimized members of Alabama's largest credit union\t which led to the arrest of 18 persons."
+- source: "In September 2023\t the $7.6 billion Redstone Federal Credit Union in Huntsville began experiencing an influx of transfer fraud. After members' account information was obtained\t funds from those accounts were fraudulently transferred into other accounts\t according to investigators at the Morgan County Sheriff's Office of Investigation in Decatur."
+- source: >-
+    Police did not say how the fraudsters obtained member account information or
+    how many member accounts were affected.
+- source: "The stolen funds were then accessed through ATM withdrawals\t in-store or online purchases\t and through Cash App."
+- source: "As of last week\t there had been a total of $3\t453\t655 in attempted fraudulent transfers with a total loss of $2\t000\t397\t investigators said."
+- source: "In addition to the 18 individuals who have been arrested\t police have also issued arrest warrants for five other individuals."
+- source: '""'
+  scopes:
+    - constant.character.escape.csv
+- source: "Any Redstone member who suffered a loss resulting from fraudulent activities were fully reimbursed by Redstone\t"
+- source: '""'
+  scopes:
+    - constant.character.escape.csv
+- source: ' the credit union said in a prepared statement. '
+- source: '""'
+  scopes:
+    - constant.character.escape.csv
+- source: "We are committed to protecting our members' accounts\t which are insured through the National Credit Union Administration."
+- source: '""'
+  scopes:
+    - constant.character.escape.csv
+- source: >-
+    Redstone encourages members to check their accounts regularly and use the
+    tools available to alert them of any unusual activity.
+- source: '""'
+  scopes:
+    - constant.character.escape.csv
+- source: "If any unauthorized activity is suspected\t we ask members to notify us immediately at 800-234-1234 or info@redfcu.org\t"
+- source: '""'
+  scopes:
+    - constant.character.escape.csv
+- source: ' the credit union said.'
+- source: "Because the investigation is ongoing\t Redstone declined to make additional comments."
+- source: "The persons who have been arrested who each have been charged with theft of property include: Bobby Wilkins\t 61 of Decatur\t Nia Janaa Brown\t 20 of Decatur\t Devron Lerand Carroll\t 23 of Decatur\t Cody Allen Powell\t 32 of Lacey's Spring\t Jayden Mekhi Burton\t 19 of Decatur\t Markus De'angelo Tapscott\t 18 of Hartselle\t Rosie Lee Wallace\t 51 of Decatur\t Steven Lee Steiner\t 71 of Decatur\t Stella Jean Couch\t 53 of Hartselle\t John Karlik Jr.\t 58 of Decatur\t Krista Lynn Spurgeon\t 44 of Lacey's Spring\t Eterniti Lee-Ann Powell\t 23 of Huntsville\t Paula Carol Ivey Hatfield\t 55 of Hartselle\t Lily-Grace Little\t 19 of Priceville\t Tamari Michelle Boulden\t 21 of Decatur and Tyeisha Amia Lewis\t 22 of Decatur\t Arieanna Michelle Swopes\t 20 of Decatur\t and Dana Carter Mosely\t 56 of Decatur."
+- source: "Warrants have been issued for Kobe Elijah Sharpley\t 21 of Decatur\t Calup Duvun Cunningham\t 21 of Decatur\t Traevion Malik Hill-Lawson\t 18 of Decatur\t Joseph Anthony Berry\t 68 and Jakey Deshun Conner\t 22 of Decatur."
+- source: '"'
+  scopes:
+    - punctuation.definition.string.csv
+  scopesEnd:
+    - string.quoted.double.csv
+    - keyword.rainbow2.csv
+    - text.csv.column2.csv
+- source: >-
+    https://www.cutimes.com/2024/05/16/3-4-million-fraud-victimizes-alabamas-largest-credit-union/
+  scopes:
+    - meta.2.inner.csv
+    - meta.3.csv
+    - string.unquoted.csv
+    - entity.name.function.rainbow3.csv
+    - text.csv.column3.csv
+  scopesEnd:
+    - meta.1.inner.csv
+    - meta.2.csv
+- source: Nominations Open for 2024 CU Times LUMINARIES Awards
+  scopes:
+    - string.unquoted.csv
+    - rainbow1.csv
+    - text.csv.column1.csv
+- source: '"'
+  scopesBegin:
+    - meta.1.inner.csv
+    - meta.2.csv
+    - string.quoted.double.csv
+    - keyword.rainbow2.csv
+    - text.csv.column2.csv
+  scopes:
+    - punctuation.definition.string.csv
+- source: >-
+    The editorial staff at CU Times is excited to announce that nominations have
+    opened for the 2024 CU Times LUMINARIES Awards!
+- source: "The awards program has been expanded this year\t in a significant way\t to include and represent more people\t organizations and groups that are working diligently to continue to build a thriving credit union industry."
+- source: "The year we have 35 categories covering credit union leadership\t community programs\t technological advancements and more. There are two columns of categories to highlight credit unions and third-party organizations serving the credit union world."
+- source: >-
+    The 2024 CU Times LUMINARIES Awards categories for credit unions are as
+    follows:
+- source: "We have nine awards for credit union Executive Leadership (CEO\t CFO and COO) which will be judged in three asset size categories of $1 billion and below\t $1 billion to $4 billion and $4 billion and higher."
+- source: >-
+    There are three credit union Community Impact awards to be judged by the
+    same three asset size categories.
+- source: >-
+    Three individual Community Impact awards for credit union employees to be
+    judged by the same three asset size categories.
+- source: >-
+    We have three awards for credit union CTO/CIO of the Year to be judged by
+    the same three asset size categories.
+- source: "We have four Innovation in Technology awards recognizing a credit union's work in Mobile Banking\t Advances in AI\t Technology Project/Rollout and Excellence in Cybersecurity."
+- source: >-
+    There are three employee awards for credit union Rising Stars to be judged
+    by the same three asset size categories.
+- source: >-
+    The 2024 CU Times LUMINARIES Awards categories for third-party organizations
+    are as follows:
+- source: "There are five categories to recognize Executive Leadership in third-party organizations such as Technology Vendors\t Trade Associations\t Credit Union Leagues\t CUSOs and Service Providers."
+- source: "We will recognize third-party organizations in four Product Innovation categories such as Mobile Banking\t Core Processing/Conversion\t Advances in AI and Credit/Debit Payment Solutions."
+- source: >-
+    There is one category to recognize the Rising Stars in a third-party
+    organization.
+- source: >-
+    There they are – the 35 categories for the 2024 CU Times LUMINARIES Awards!
+    Our editorial team spent months thinking about how we could improve upon
+    last year's awards and we believe we've come up with an incredible line up
+    to highlight this industry and people we truly care about.
+- source: "Nominations are open until Thursday\t July 18."
+- source: "Finalists will be announced in September and the winners will be announced live at the LUMINARIES Awards gala at the Disney Yacht Club & Resort in Orlando\t Fla. on Nov. 7."
+- source: '"'
+  scopes:
+    - punctuation.definition.string.csv
+  scopesEnd:
+    - string.quoted.double.csv
+    - keyword.rainbow2.csv
+    - text.csv.column2.csv
+- source: >-
+    https://www.cutimes.com/2024/05/16/nominations-open-for-2024-cu-times-luminaries-awards/
+  scopes:
+    - meta.2.inner.csv
+    - meta.3.csv
+    - string.unquoted.csv
+    - entity.name.function.rainbow3.csv
+    - text.csv.column3.csv

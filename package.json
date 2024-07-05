@@ -230,11 +230,14 @@
         "dictionary-en-us": "^2.1.1",
         "lodash": "^4.17.19",
         "nspell": "^2.1.2",
-        "oniguruma": "^7.2.0",
-        "textmate-bailout": "^1.1.0",
-        "vsce": "^1.99.0",
-        "yargs": "^17.5.1",
+        "oniguruma": "^7.2.3",
         "ovsx": "^0.5.1",
-        "textmate-tester": "^1.1.9"
+        "textmate-bailout": "^1.1.0",
+        "textmate-tester": "^1.1.14",
+        "vsce": "^1.99.0",
+        "vscode-textmate": "^9.0.0",
+        "yargs": "^17.5.1"
+    },
+    "dependencies": {
     }
 }
