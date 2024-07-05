@@ -2,7 +2,7 @@
     "name": "better-csv-syntax",
     "displayName": "Better CSV Syntax",
     "description": "",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "icon": "icon.png",
     "repository": {
         "type": "git",
