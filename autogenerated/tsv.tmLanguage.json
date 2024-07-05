@@ -1,10 +1,11 @@
 {
   "version": "",
-  "name": "TSV",
+  "name": "tsv",
   "scopeName": "text.tsv",
   "fileTypes": [
-    "tsv",
-    "tab"
+    ".tsv",
+    ".tab",
+    ".tsv"
   ],
   "patterns": [
     {
