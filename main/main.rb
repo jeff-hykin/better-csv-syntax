@@ -89,12 +89,12 @@ for each in kinds
                     # 
                     Pattern.new( # simple pattern
                         match: /(?:\G|\A)[^"#{separator}]*/,
-                        tag_as: "string.unquoted #{column_tag} csv.column#{column_number}"
+                        tag_as: "string.unquoted #{column_tag} text.csv.column#{column_number}"
                     ).then(
                         grammar[:separator].or(lookAheadFor(/$/)),
                     ),
                     PatternRange.new(
-                        tag_as: "string.quoted.double #{column_tag} csv.column#{column_number}",
+                        tag_as: "string.quoted.double #{column_tag} text.csv.column#{column_number}",
                         zeroLengthStart?: true,
                         start_pattern: Pattern.new(
                             Pattern.new(
@@ -146,12 +146,12 @@ for each in kinds
                 # 
                 Pattern.new( # simple pattern
                     match: /(?:\G|\A)[^"#{separator}]*/,
-                    tag_as: "string.unquoted rainbow1 csv.column1"
+                    tag_as: "string.unquoted rainbow1 text.csv.column1"
                 ).then(
                     grammar[:separator].or(lookAheadFor(/$/)),
                 ),
                 PatternRange.new(
-                    tag_as: "string.quoted.double rainbow1 csv.column1",
+                    tag_as: "string.quoted.double rainbow1 text.csv.column1",
                     zeroLengthStart?: true,
                     start_pattern: Pattern.new(
                         Pattern.new(
