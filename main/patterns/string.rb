@@ -11,7 +11,7 @@ export.exports = [ # patterns that are exported
 # (other :patterns can be created and used, but they will be namespace-randomized to keep them from ever conflicting/overwriting external patterns)
 
 escape_pattern = Pattern.new(
-    match: /\\./,
+    match: /""/,
     tag_as: "constant.character.escape"
 )
 
@@ -24,6 +24,7 @@ export[:string] = PatternRange.new(
         match: /"/,
         tag_as: "punctuation.definition.string"
     ),
+    apply_end_pattern_last: true,
     includes: [
         escape_pattern
     ],
