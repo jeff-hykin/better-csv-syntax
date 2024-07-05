@@ -85,39 +85,54 @@ grammar = Grammar.new(
 # 
 # basic patterns
 # 
+    separator = ","
+    grammar[:separator] = Pattern.new(
+        tag_as: "punctuation.definition.entry",
+        match: separator,
+    )
     grammar[:escape] = Pattern.new(
         match: /""/,
         tag_as: "constant.character.escape",
     )
-    separator = ","
     generateRow = ->(column_tag:"entity.name.tag", column_number:1, children:[]) do
         PatternRange.new(
+            tag_as: "meta.#{column_number}",
             start_pattern: Pattern.new(/(?:\G|\A)/),
+            zeroLengthStart?: true,
             end_pattern: Pattern.new(
                 tag_as: "punctuation.definition.entry",
-                match: separator,
-            ).or("\n"),
+                match: lookAheadFor("\n"),
+            ),
             apply_end_pattern_last: true,
             includes: [
                 # 
-                # one entry
+                # only match the first entry
                 # 
                 Pattern.new( # simple pattern
-                    match: /(?:\G|\A)[^"#{separator}]*(?=#{separator}|\n)/,
+                    match: /(?:\G|\A)[^"#{separator}]*/,
                     tag_as: "string.unquoted #{column_tag} csv.column#{column_number}"
+                ).then(
+                    grammar[:separator].or(lookAheadFor("\n")),
                 ),
                 PatternRange.new(
                     tag_as: "string.quoted.double #{column_tag} csv.column#{column_number}",
+                    zeroLengthStart?: true,
                     start_pattern: Pattern.new(
-                        /(?:\G|\A)/,
-                    ).then(
-                        tag_as: "punctuation.definition.string",
-                        match: '"',
+                        Pattern.new(
+                            /(?:\G|\A) */,
+                        ).then(
+                            tag_as: "punctuation.definition.string",
+                            match: '"',
+                        )
                     ),
                     apply_end_pattern_last: true,
                     end_pattern: Pattern.new(
-                        tag_as: "punctuation.definition.string",
-                        match: '"',
+                        Pattern.new(
+                            tag_as: "punctuation.definition.string",
+                            match: '"',
+                        ).then(/ */).then(
+                           grammar[:separator].or(lookAheadFor("\n")),
+                        )
                     ),
                     includes: [
                         :escape,
@@ -126,7 +141,14 @@ grammar = Grammar.new(
                 # 
                 # subsequent entries
                 # 
-                *children,
+                PatternRange.new(
+                    tag_as: "meta.#{column_number}.inner",
+                    start_pattern: lookBehindFor(separator),
+                    end_pattern: lookAheadFor("\n"),
+                    includes: [
+                        *children,
+                    ],
+                )
             ],
         )
     end
@@ -140,6 +162,7 @@ grammar = Grammar.new(
                                 generateRow[column_tag:"entity.name.type.rainbow8", column_number:8, children:[
                                     generateRow[column_tag:"markup.bold.rainbow9", column_number:9, children:[
                                         generateRow[column_tag:"invalid.rainbow10", column_number:10, children:[
+                                            :item,
                                         ]]
                                     ]]
                                 ]]
