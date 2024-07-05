@@ -1,9 +1,10 @@
 {
   "version": "",
-  "name": "CSV",
+  "name": "TSV",
   "scopeName": "text.csv",
   "fileTypes": [
-    "csv"
+    "tsv",
+    "tab"
   ],
   "patterns": [
     {
@@ -28,7 +29,7 @@
       "name": "meta.1.csv",
       "patterns": [
         {
-          "match": "((?:\\G|\\A)[^\",]*)(?:(,)|(?=$))",
+          "match": "((?:\\G|\\A)[^\"\t]*)(?:(\\t)|(?=$))",
           "captures": {
             "1": {
               "name": "string.unquoted.csv rainbow1.csv text.csv.column1.csv"
@@ -40,7 +41,7 @@
         },
         {
           "begin": "(?:(?:(?:\\G|\\A) *)(\"))",
-          "end": "(?:(\")(?: *)(?:(,)|(?=$)))",
+          "end": "(?:(\")(?: *)(?:(\\t)|(?=$)))",
           "beginCaptures": {
             "1": {
               "name": "punctuation.definition.string.csv"
@@ -63,7 +64,7 @@
           "applyEndPatternLast": 1
         },
         {
-          "begin": "(?<=,)(?!$)",
+          "begin": "(?<=\\t)(?!$)",
           "end": "(?=$)",
           "beginCaptures": {
           },
@@ -84,7 +85,7 @@
               "name": "meta.2.csv",
               "patterns": [
                 {
-                  "match": "((?:\\G|\\A)[^\",]*)(?:(,)|(?=$))",
+                  "match": "((?:\\G|\\A)[^\"\t]*)(?:(\\t)|(?=$))",
                   "captures": {
                     "1": {
                       "name": "string.unquoted.csv keyword.rainbow2.csv text.csv.column2.csv"
@@ -96,7 +97,7 @@
                 },
                 {
                   "begin": "(?:(?:(?:\\G|\\A) *)(\"))",
-                  "end": "(?:(\")(?: *)(?:(,)|(?=$)))",
+                  "end": "(?:(\")(?: *)(?:(\\t)|(?=$)))",
                   "beginCaptures": {
                     "1": {
                       "name": "punctuation.definition.string.csv"
@@ -119,7 +120,7 @@
                   "applyEndPatternLast": 1
                 },
                 {
-                  "begin": "(?<=,)(?!$)",
+                  "begin": "(?<=\\t)(?!$)",
                   "end": "(?=$)",
                   "beginCaptures": {
                   },
@@ -140,7 +141,7 @@
                       "name": "meta.3.csv",
                       "patterns": [
                         {
-                          "match": "((?:\\G|\\A)[^\",]*)(?:(,)|(?=$))",
+                          "match": "((?:\\G|\\A)[^\"\t]*)(?:(\\t)|(?=$))",
                           "captures": {
                             "1": {
                               "name": "string.unquoted.csv entity.name.function.rainbow3.csv text.csv.column3.csv"
@@ -152,7 +153,7 @@
                         },
                         {
                           "begin": "(?:(?:(?:\\G|\\A) *)(\"))",
-                          "end": "(?:(\")(?: *)(?:(,)|(?=$)))",
+                          "end": "(?:(\")(?: *)(?:(\\t)|(?=$)))",
                           "beginCaptures": {
                             "1": {
                               "name": "punctuation.definition.string.csv"
@@ -175,7 +176,7 @@
                           "applyEndPatternLast": 1
                         },
                         {
-                          "begin": "(?<=,)(?!$)",
+                          "begin": "(?<=\\t)(?!$)",
                           "end": "(?=$)",
                           "beginCaptures": {
                           },
@@ -196,7 +197,7 @@
                               "name": "meta.4.csv",
                               "patterns": [
                                 {
-                                  "match": "((?:\\G|\\A)[^\",]*)(?:(,)|(?=$))",
+                                  "match": "((?:\\G|\\A)[^\"\t]*)(?:(\\t)|(?=$))",
                                   "captures": {
                                     "1": {
                                       "name": "string.unquoted.csv comment.rainbow4.csv text.csv.column4.csv"
@@ -208,7 +209,7 @@
                                 },
                                 {
                                   "begin": "(?:(?:(?:\\G|\\A) *)(\"))",
-                                  "end": "(?:(\")(?: *)(?:(,)|(?=$)))",
+                                  "end": "(?:(\")(?: *)(?:(\\t)|(?=$)))",
                                   "beginCaptures": {
                                     "1": {
                                       "name": "punctuation.definition.string.csv"
@@ -231,7 +232,7 @@
                                   "applyEndPatternLast": 1
                                 },
                                 {
-                                  "begin": "(?<=,)(?!$)",
+                                  "begin": "(?<=\\t)(?!$)",
                                   "end": "(?=$)",
                                   "beginCaptures": {
                                   },
@@ -252,7 +253,7 @@
                                       "name": "meta.5.csv",
                                       "patterns": [
                                         {
-                                          "match": "((?:\\G|\\A)[^\",]*)(?:(,)|(?=$))",
+                                          "match": "((?:\\G|\\A)[^\"\t]*)(?:(\\t)|(?=$))",
                                           "captures": {
                                             "1": {
                                               "name": "string.unquoted.csv string.rainbow5.csv text.csv.column5.csv"
@@ -264,7 +265,7 @@
                                         },
                                         {
                                           "begin": "(?:(?:(?:\\G|\\A) *)(\"))",
-                                          "end": "(?:(\")(?: *)(?:(,)|(?=$)))",
+                                          "end": "(?:(\")(?: *)(?:(\\t)|(?=$)))",
                                           "beginCaptures": {
                                             "1": {
                                               "name": "punctuation.definition.string.csv"
@@ -287,7 +288,7 @@
                                           "applyEndPatternLast": 1
                                         },
                                         {
-                                          "begin": "(?<=,)(?!$)",
+                                          "begin": "(?<=\\t)(?!$)",
                                           "end": "(?=$)",
                                           "beginCaptures": {
                                           },
@@ -308,7 +309,7 @@
                                               "name": "meta.6.csv",
                                               "patterns": [
                                                 {
-                                                  "match": "((?:\\G|\\A)[^\",]*)(?:(,)|(?=$))",
+                                                  "match": "((?:\\G|\\A)[^\"\t]*)(?:(\\t)|(?=$))",
                                                   "captures": {
                                                     "1": {
                                                       "name": "string.unquoted.csv variable.parameter.rainbow6.csv text.csv.column6.csv"
@@ -320,7 +321,7 @@
                                                 },
                                                 {
                                                   "begin": "(?:(?:(?:\\G|\\A) *)(\"))",
-                                                  "end": "(?:(\")(?: *)(?:(,)|(?=$)))",
+                                                  "end": "(?:(\")(?: *)(?:(\\t)|(?=$)))",
                                                   "beginCaptures": {
                                                     "1": {
                                                       "name": "punctuation.definition.string.csv"
@@ -343,7 +344,7 @@
                                                   "applyEndPatternLast": 1
                                                 },
                                                 {
-                                                  "begin": "(?<=,)(?!$)",
+                                                  "begin": "(?<=\\t)(?!$)",
                                                   "end": "(?=$)",
                                                   "beginCaptures": {
                                                   },
@@ -364,7 +365,7 @@
                                                       "name": "meta.7.csv",
                                                       "patterns": [
                                                         {
-                                                          "match": "((?:\\G|\\A)[^\",]*)(?:(,)|(?=$))",
+                                                          "match": "((?:\\G|\\A)[^\"\t]*)(?:(\\t)|(?=$))",
                                                           "captures": {
                                                             "1": {
                                                               "name": "string.unquoted.csv constant.numeric.rainbow7.csv text.csv.column7.csv"
@@ -376,7 +377,7 @@
                                                         },
                                                         {
                                                           "begin": "(?:(?:(?:\\G|\\A) *)(\"))",
-                                                          "end": "(?:(\")(?: *)(?:(,)|(?=$)))",
+                                                          "end": "(?:(\")(?: *)(?:(\\t)|(?=$)))",
                                                           "beginCaptures": {
                                                             "1": {
                                                               "name": "punctuation.definition.string.csv"
@@ -399,7 +400,7 @@
                                                           "applyEndPatternLast": 1
                                                         },
                                                         {
-                                                          "begin": "(?<=,)(?!$)",
+                                                          "begin": "(?<=\\t)(?!$)",
                                                           "end": "(?=$)",
                                                           "beginCaptures": {
                                                           },
@@ -420,7 +421,7 @@
                                                               "name": "meta.8.csv",
                                                               "patterns": [
                                                                 {
-                                                                  "match": "((?:\\G|\\A)[^\",]*)(?:(,)|(?=$))",
+                                                                  "match": "((?:\\G|\\A)[^\"\t]*)(?:(\\t)|(?=$))",
                                                                   "captures": {
                                                                     "1": {
                                                                       "name": "string.unquoted.csv entity.name.type.rainbow8.csv text.csv.column8.csv"
@@ -432,7 +433,7 @@
                                                                 },
                                                                 {
                                                                   "begin": "(?:(?:(?:\\G|\\A) *)(\"))",
-                                                                  "end": "(?:(\")(?: *)(?:(,)|(?=$)))",
+                                                                  "end": "(?:(\")(?: *)(?:(\\t)|(?=$)))",
                                                                   "beginCaptures": {
                                                                     "1": {
                                                                       "name": "punctuation.definition.string.csv"
@@ -455,7 +456,7 @@
                                                                   "applyEndPatternLast": 1
                                                                 },
                                                                 {
-                                                                  "begin": "(?<=,)(?!$)",
+                                                                  "begin": "(?<=\\t)(?!$)",
                                                                   "end": "(?=$)",
                                                                   "beginCaptures": {
                                                                   },
@@ -476,7 +477,7 @@
                                                                       "name": "meta.9.csv",
                                                                       "patterns": [
                                                                         {
-                                                                          "match": "((?:\\G|\\A)[^\",]*)(?:(,)|(?=$))",
+                                                                          "match": "((?:\\G|\\A)[^\"\t]*)(?:(\\t)|(?=$))",
                                                                           "captures": {
                                                                             "1": {
                                                                               "name": "string.unquoted.csv markup.bold.rainbow9.csv text.csv.column9.csv"
@@ -488,7 +489,7 @@
                                                                         },
                                                                         {
                                                                           "begin": "(?:(?:(?:\\G|\\A) *)(\"))",
-                                                                          "end": "(?:(\")(?: *)(?:(,)|(?=$)))",
+                                                                          "end": "(?:(\")(?: *)(?:(\\t)|(?=$)))",
                                                                           "beginCaptures": {
                                                                             "1": {
                                                                               "name": "punctuation.definition.string.csv"
@@ -511,7 +512,7 @@
                                                                           "applyEndPatternLast": 1
                                                                         },
                                                                         {
-                                                                          "begin": "(?<=,)(?!$)",
+                                                                          "begin": "(?<=\\t)(?!$)",
                                                                           "end": "(?=$)",
                                                                           "beginCaptures": {
                                                                           },
@@ -532,7 +533,7 @@
                                                                               "name": "meta.10.csv",
                                                                               "patterns": [
                                                                                 {
-                                                                                  "match": "((?:\\G|\\A)[^\",]*)(?:(,)|(?=$))",
+                                                                                  "match": "((?:\\G|\\A)[^\"\t]*)(?:(\\t)|(?=$))",
                                                                                   "captures": {
                                                                                     "1": {
                                                                                       "name": "string.unquoted.csv invalid.rainbow10.csv text.csv.column10.csv"
@@ -544,7 +545,7 @@
                                                                                 },
                                                                                 {
                                                                                   "begin": "(?:(?:(?:\\G|\\A) *)(\"))",
-                                                                                  "end": "(?:(\")(?: *)(?:(,)|(?=$)))",
+                                                                                  "end": "(?:(\")(?: *)(?:(\\t)|(?=$)))",
                                                                                   "beginCaptures": {
                                                                                     "1": {
                                                                                       "name": "punctuation.definition.string.csv"
@@ -567,7 +568,7 @@
                                                                                   "applyEndPatternLast": 1
                                                                                 },
                                                                                 {
-                                                                                  "begin": "(?<=,)(?!$)",
+                                                                                  "begin": "(?<=\\t)(?!$)",
                                                                                   "end": "(?=$)",
                                                                                   "beginCaptures": {
                                                                                   },
@@ -629,7 +630,7 @@
       "applyEndPatternLast": 1
     },
     "separator": {
-      "match": ",",
+      "match": "\\t",
       "name": "punctuation.definition.entry.csv"
     }
   }

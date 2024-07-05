@@ -14,6 +14,16 @@ kinds = [
         ],
         separator: ",",
     },
+    {
+        grammar_name: "TSV",
+        syntax_name: "tsv",
+        scope_name: "text.csv",
+        fileTypes: [
+            "tsv",
+            "tab",
+        ],
+        separator: "\t",
+    },
 ]
 
 for each in kinds
