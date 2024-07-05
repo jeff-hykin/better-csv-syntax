@@ -17,7 +17,7 @@ kinds = [
     {
         grammar_name: "TSV",
         syntax_name: "tsv",
-        scope_name: "text.csv",
+        scope_name: "text.tsv",
         fileTypes: [
             "tsv",
             "tab",

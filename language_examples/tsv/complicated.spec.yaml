@@ -1,42 +1,42 @@
 - source: Article Title
   scopesBegin:
-    - meta.1.csv
+    - meta.1
   scopes:
-    - string.unquoted.csv
-    - rainbow1.csv
-    - text.csv.column1.csv
+    - string.unquoted
+    - rainbow1
+    - text.csv.column1
 - source: Article Text
   scopesBegin:
-    - meta.1.inner.csv
-    - meta.2.csv
+    - meta.1.inner
+    - meta.2
   scopes:
-    - string.unquoted.csv
-    - keyword.rainbow2.csv
-    - text.csv.column2.csv
+    - string.unquoted
+    - keyword.rainbow2
+    - text.csv.column2
 - source: Link
   scopes:
-    - meta.2.inner.csv
-    - meta.3.csv
-    - string.unquoted.csv
-    - entity.name.function.rainbow3.csv
-    - text.csv.column3.csv
+    - meta.2.inner
+    - meta.3
+    - string.unquoted
+    - entity.name.function.rainbow3
+    - text.csv.column3
   scopesEnd:
-    - meta.1.inner.csv
-    - meta.2.csv
+    - meta.1.inner
+    - meta.2
 - source: $3.4 Million Fraud Victimizes Alabama's Largest Credit Union
   scopes:
-    - string.unquoted.csv
-    - rainbow1.csv
-    - text.csv.column1.csv
+    - string.unquoted
+    - rainbow1
+    - text.csv.column1
 - source: '"'
   scopesBegin:
-    - meta.1.inner.csv
-    - meta.2.csv
-    - string.quoted.double.csv
-    - keyword.rainbow2.csv
-    - text.csv.column2.csv
+    - meta.1.inner
+    - meta.2
+    - string.quoted.double
+    - keyword.rainbow2
+    - text.csv.column2
   scopes:
-    - punctuation.definition.string.csv
+    - punctuation.definition.string
 - source: "Police are investigating a $3.4 million fraud scheme that victimized members of Alabama's largest credit union\t which led to the arrest of 18 persons."
 - source: "In September 2023\t the $7.6 billion Redstone Federal Credit Union in Huntsville began experiencing an influx of transfer fraud. After members' account information was obtained\t funds from those accounts were fraudulently transferred into other accounts\t according to investigators at the Morgan County Sheriff's Office of Investigation in Decatur."
 - source: >-
@@ -47,65 +47,65 @@
 - source: "In addition to the 18 individuals who have been arrested\t police have also issued arrest warrants for five other individuals."
 - source: '""'
   scopes:
-    - constant.character.escape.csv
+    - constant.character.escape
 - source: "Any Redstone member who suffered a loss resulting from fraudulent activities were fully reimbursed by Redstone\t"
 - source: '""'
   scopes:
-    - constant.character.escape.csv
+    - constant.character.escape
 - source: ' the credit union said in a prepared statement. '
 - source: '""'
   scopes:
-    - constant.character.escape.csv
+    - constant.character.escape
 - source: "We are committed to protecting our members' accounts\t which are insured through the National Credit Union Administration."
 - source: '""'
   scopes:
-    - constant.character.escape.csv
+    - constant.character.escape
 - source: >-
     Redstone encourages members to check their accounts regularly and use the
     tools available to alert them of any unusual activity.
 - source: '""'
   scopes:
-    - constant.character.escape.csv
+    - constant.character.escape
 - source: "If any unauthorized activity is suspected\t we ask members to notify us immediately at 800-234-1234 or info@redfcu.org\t"
 - source: '""'
   scopes:
-    - constant.character.escape.csv
+    - constant.character.escape
 - source: ' the credit union said.'
 - source: "Because the investigation is ongoing\t Redstone declined to make additional comments."
 - source: "The persons who have been arrested who each have been charged with theft of property include: Bobby Wilkins\t 61 of Decatur\t Nia Janaa Brown\t 20 of Decatur\t Devron Lerand Carroll\t 23 of Decatur\t Cody Allen Powell\t 32 of Lacey's Spring\t Jayden Mekhi Burton\t 19 of Decatur\t Markus De'angelo Tapscott\t 18 of Hartselle\t Rosie Lee Wallace\t 51 of Decatur\t Steven Lee Steiner\t 71 of Decatur\t Stella Jean Couch\t 53 of Hartselle\t John Karlik Jr.\t 58 of Decatur\t Krista Lynn Spurgeon\t 44 of Lacey's Spring\t Eterniti Lee-Ann Powell\t 23 of Huntsville\t Paula Carol Ivey Hatfield\t 55 of Hartselle\t Lily-Grace Little\t 19 of Priceville\t Tamari Michelle Boulden\t 21 of Decatur and Tyeisha Amia Lewis\t 22 of Decatur\t Arieanna Michelle Swopes\t 20 of Decatur\t and Dana Carter Mosely\t 56 of Decatur."
 - source: "Warrants have been issued for Kobe Elijah Sharpley\t 21 of Decatur\t Calup Duvun Cunningham\t 21 of Decatur\t Traevion Malik Hill-Lawson\t 18 of Decatur\t Joseph Anthony Berry\t 68 and Jakey Deshun Conner\t 22 of Decatur."
 - source: '"'
   scopes:
-    - punctuation.definition.string.csv
+    - punctuation.definition.string
   scopesEnd:
-    - string.quoted.double.csv
-    - keyword.rainbow2.csv
-    - text.csv.column2.csv
+    - string.quoted.double
+    - keyword.rainbow2
+    - text.csv.column2
 - source: >-
     https://www.cutimes.com/2024/05/16/3-4-million-fraud-victimizes-alabamas-largest-credit-union/
   scopes:
-    - meta.2.inner.csv
-    - meta.3.csv
-    - string.unquoted.csv
-    - entity.name.function.rainbow3.csv
-    - text.csv.column3.csv
+    - meta.2.inner
+    - meta.3
+    - string.unquoted
+    - entity.name.function.rainbow3
+    - text.csv.column3
   scopesEnd:
-    - meta.1.inner.csv
-    - meta.2.csv
+    - meta.1.inner
+    - meta.2
 - source: Nominations Open for 2024 CU Times LUMINARIES Awards
   scopes:
-    - string.unquoted.csv
-    - rainbow1.csv
-    - text.csv.column1.csv
+    - string.unquoted
+    - rainbow1
+    - text.csv.column1
 - source: '"'
   scopesBegin:
-    - meta.1.inner.csv
-    - meta.2.csv
-    - string.quoted.double.csv
-    - keyword.rainbow2.csv
-    - text.csv.column2.csv
+    - meta.1.inner
+    - meta.2
+    - string.quoted.double
+    - keyword.rainbow2
+    - text.csv.column2
   scopes:
-    - punctuation.definition.string.csv
+    - punctuation.definition.string
 - source: >-
     The editorial staff at CU Times is excited to announce that nominations have
     opened for the 2024 CU Times LUMINARIES Awards!
@@ -145,16 +145,16 @@
 - source: "Finalists will be announced in September and the winners will be announced live at the LUMINARIES Awards gala at the Disney Yacht Club & Resort in Orlando\t Fla. on Nov. 7."
 - source: '"'
   scopes:
-    - punctuation.definition.string.csv
+    - punctuation.definition.string
   scopesEnd:
-    - string.quoted.double.csv
-    - keyword.rainbow2.csv
-    - text.csv.column2.csv
+    - string.quoted.double
+    - keyword.rainbow2
+    - text.csv.column2
 - source: >-
     https://www.cutimes.com/2024/05/16/nominations-open-for-2024-cu-times-luminaries-awards/
   scopes:
-    - meta.2.inner.csv
-    - meta.3.csv
-    - string.unquoted.csv
-    - entity.name.function.rainbow3.csv
-    - text.csv.column3.csv
+    - meta.2.inner
+    - meta.3
+    - string.unquoted
+    - entity.name.function.rainbow3
+    - text.csv.column3

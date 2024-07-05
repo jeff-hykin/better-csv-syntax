@@ -1,827 +1,827 @@
 - source: a
   scopesBegin:
-    - meta.1.csv
+    - meta.1
   scopes:
-    - string.unquoted.csv
-    - rainbow1.csv
-    - text.csv.column1.csv
+    - string.unquoted
+    - rainbow1
+    - text.csv.column1
 - source: b
   scopesBegin:
-    - meta.1.inner.csv
-    - meta.2.csv
+    - meta.1.inner
+    - meta.2
   scopes:
-    - string.unquoted.csv
-    - keyword.rainbow2.csv
-    - text.csv.column2.csv
+    - string.unquoted
+    - keyword.rainbow2
+    - text.csv.column2
 - source: c
   scopesBegin:
-    - meta.2.inner.csv
-    - meta.3.csv
+    - meta.2.inner
+    - meta.3
   scopes:
-    - string.unquoted.csv
-    - entity.name.function.rainbow3.csv
-    - text.csv.column3.csv
+    - string.unquoted
+    - entity.name.function.rainbow3
+    - text.csv.column3
 - source: d
   scopesBegin:
-    - meta.3.inner.csv
-    - meta.4.csv
+    - meta.3.inner
+    - meta.4
   scopes:
-    - string.unquoted.csv
-    - comment.rainbow4.csv
-    - text.csv.column4.csv
+    - string.unquoted
+    - comment.rainbow4
+    - text.csv.column4
 - source: e
   scopesBegin:
-    - meta.4.inner.csv
-    - meta.5.csv
+    - meta.4.inner
+    - meta.5
   scopes:
-    - string.unquoted.csv
-    - string.rainbow5.csv
-    - text.csv.column5.csv
+    - string.unquoted
+    - string.rainbow5
+    - text.csv.column5
 - source: f
   scopesBegin:
-    - meta.5.inner.csv
-    - meta.6.csv
+    - meta.5.inner
+    - meta.6
   scopes:
-    - string.unquoted.csv
-    - variable.parameter.rainbow6.csv
-    - text.csv.column6.csv
+    - string.unquoted
+    - variable.parameter.rainbow6
+    - text.csv.column6
 - source: g
   scopesBegin:
-    - meta.6.inner.csv
-    - meta.7.csv
+    - meta.6.inner
+    - meta.7
   scopes:
-    - string.unquoted.csv
-    - constant.numeric.rainbow7.csv
-    - text.csv.column7.csv
+    - string.unquoted
+    - constant.numeric.rainbow7
+    - text.csv.column7
 - source: h
   scopesBegin:
-    - meta.7.inner.csv
-    - meta.8.csv
+    - meta.7.inner
+    - meta.8
   scopes:
-    - string.unquoted.csv
-    - entity.name.type.rainbow8.csv
-    - text.csv.column8.csv
+    - string.unquoted
+    - entity.name.type.rainbow8
+    - text.csv.column8
 - source: i
   scopesBegin:
-    - meta.8.inner.csv
-    - meta.9.csv
+    - meta.8.inner
+    - meta.9
   scopes:
-    - string.unquoted.csv
-    - markup.bold.rainbow9.csv
-    - text.csv.column9.csv
+    - string.unquoted
+    - markup.bold.rainbow9
+    - text.csv.column9
 - source: j
   scopesBegin:
-    - meta.9.inner.csv
-    - meta.10.csv
+    - meta.9.inner
+    - meta.10
   scopes:
-    - string.unquoted.csv
-    - invalid.rainbow10.csv
-    - text.csv.column10.csv
+    - string.unquoted
+    - invalid.rainbow10
+    - text.csv.column10
 - source: k
   scopesBegin:
-    - meta.10.inner.csv
-    - meta.1.csv
+    - meta.10.inner
+    - meta.1
   scopes:
-    - string.unquoted.csv
-    - rainbow1.csv
-    - text.csv.column1.csv
+    - string.unquoted
+    - rainbow1
+    - text.csv.column1
 - source: l
   scopesBegin:
-    - meta.1.inner.csv
-    - meta.2.csv
+    - meta.1.inner
+    - meta.2
   scopes:
-    - string.unquoted.csv
-    - keyword.rainbow2.csv
-    - text.csv.column2.csv
+    - string.unquoted
+    - keyword.rainbow2
+    - text.csv.column2
 - source: m
   scopesBegin:
-    - meta.2.inner.csv
-    - meta.3.csv
+    - meta.2.inner
+    - meta.3
   scopes:
-    - string.unquoted.csv
-    - entity.name.function.rainbow3.csv
-    - text.csv.column3.csv
+    - string.unquoted
+    - entity.name.function.rainbow3
+    - text.csv.column3
 - source: 'n'
   scopesBegin:
-    - meta.3.inner.csv
-    - meta.4.csv
+    - meta.3.inner
+    - meta.4
   scopes:
-    - string.unquoted.csv
-    - comment.rainbow4.csv
-    - text.csv.column4.csv
+    - string.unquoted
+    - comment.rainbow4
+    - text.csv.column4
 - source: o
   scopesBegin:
-    - meta.4.inner.csv
-    - meta.5.csv
+    - meta.4.inner
+    - meta.5
   scopes:
-    - string.unquoted.csv
-    - string.rainbow5.csv
-    - text.csv.column5.csv
+    - string.unquoted
+    - string.rainbow5
+    - text.csv.column5
 - source: p
   scopesBegin:
-    - meta.5.inner.csv
-    - meta.6.csv
+    - meta.5.inner
+    - meta.6
   scopes:
-    - string.unquoted.csv
-    - variable.parameter.rainbow6.csv
-    - text.csv.column6.csv
+    - string.unquoted
+    - variable.parameter.rainbow6
+    - text.csv.column6
 - source: q
   scopesBegin:
-    - meta.6.inner.csv
-    - meta.7.csv
+    - meta.6.inner
+    - meta.7
   scopes:
-    - string.unquoted.csv
-    - constant.numeric.rainbow7.csv
-    - text.csv.column7.csv
+    - string.unquoted
+    - constant.numeric.rainbow7
+    - text.csv.column7
 - source: r
   scopesBegin:
-    - meta.7.inner.csv
-    - meta.8.csv
+    - meta.7.inner
+    - meta.8
   scopes:
-    - string.unquoted.csv
-    - entity.name.type.rainbow8.csv
-    - text.csv.column8.csv
+    - string.unquoted
+    - entity.name.type.rainbow8
+    - text.csv.column8
 - source: s
   scopesBegin:
-    - meta.8.inner.csv
-    - meta.9.csv
+    - meta.8.inner
+    - meta.9
   scopes:
-    - string.unquoted.csv
-    - markup.bold.rainbow9.csv
-    - text.csv.column9.csv
+    - string.unquoted
+    - markup.bold.rainbow9
+    - text.csv.column9
 - source: t
   scopesBegin:
-    - meta.9.inner.csv
-    - meta.10.csv
+    - meta.9.inner
+    - meta.10
   scopes:
-    - string.unquoted.csv
-    - invalid.rainbow10.csv
-    - text.csv.column10.csv
+    - string.unquoted
+    - invalid.rainbow10
+    - text.csv.column10
 - source: u
   scopesBegin:
-    - meta.10.inner.csv
-    - meta.1.csv
+    - meta.10.inner
+    - meta.1
   scopes:
-    - string.unquoted.csv
-    - rainbow1.csv
-    - text.csv.column1.csv
+    - string.unquoted
+    - rainbow1
+    - text.csv.column1
 - source: v
   scopesBegin:
-    - meta.1.inner.csv
-    - meta.2.csv
+    - meta.1.inner
+    - meta.2
   scopes:
-    - string.unquoted.csv
-    - keyword.rainbow2.csv
-    - text.csv.column2.csv
+    - string.unquoted
+    - keyword.rainbow2
+    - text.csv.column2
 - source: w
   scopesBegin:
-    - meta.2.inner.csv
-    - meta.3.csv
+    - meta.2.inner
+    - meta.3
   scopes:
-    - string.unquoted.csv
-    - entity.name.function.rainbow3.csv
-    - text.csv.column3.csv
+    - string.unquoted
+    - entity.name.function.rainbow3
+    - text.csv.column3
 - source: x
   scopesBegin:
-    - meta.3.inner.csv
-    - meta.4.csv
+    - meta.3.inner
+    - meta.4
   scopes:
-    - string.unquoted.csv
-    - comment.rainbow4.csv
-    - text.csv.column4.csv
+    - string.unquoted
+    - comment.rainbow4
+    - text.csv.column4
 - source: 'y'
   scopesBegin:
-    - meta.4.inner.csv
-    - meta.5.csv
+    - meta.4.inner
+    - meta.5
   scopes:
-    - string.unquoted.csv
-    - string.rainbow5.csv
-    - text.csv.column5.csv
+    - string.unquoted
+    - string.rainbow5
+    - text.csv.column5
 - source: z
   scopesBegin:
-    - meta.5.inner.csv
-    - meta.6.csv
+    - meta.5.inner
+    - meta.6
   scopes:
-    - string.unquoted.csv
-    - variable.parameter.rainbow6.csv
-    - text.csv.column6.csv
+    - string.unquoted
+    - variable.parameter.rainbow6
+    - text.csv.column6
 - source: A
   scopesBegin:
-    - meta.6.inner.csv
-    - meta.7.csv
+    - meta.6.inner
+    - meta.7
   scopes:
-    - string.unquoted.csv
-    - constant.numeric.rainbow7.csv
-    - text.csv.column7.csv
+    - string.unquoted
+    - constant.numeric.rainbow7
+    - text.csv.column7
 - source: B
   scopesBegin:
-    - meta.7.inner.csv
-    - meta.8.csv
+    - meta.7.inner
+    - meta.8
   scopes:
-    - string.unquoted.csv
-    - entity.name.type.rainbow8.csv
-    - text.csv.column8.csv
+    - string.unquoted
+    - entity.name.type.rainbow8
+    - text.csv.column8
 - source: C
   scopesBegin:
-    - meta.8.inner.csv
-    - meta.9.csv
+    - meta.8.inner
+    - meta.9
   scopes:
-    - string.unquoted.csv
-    - markup.bold.rainbow9.csv
-    - text.csv.column9.csv
+    - string.unquoted
+    - markup.bold.rainbow9
+    - text.csv.column9
 - source: D
   scopesBegin:
-    - meta.9.inner.csv
-    - meta.10.csv
+    - meta.9.inner
+    - meta.10
   scopes:
-    - string.unquoted.csv
-    - invalid.rainbow10.csv
-    - text.csv.column10.csv
+    - string.unquoted
+    - invalid.rainbow10
+    - text.csv.column10
 - source: E
   scopesBegin:
-    - meta.10.inner.csv
-    - meta.1.csv
+    - meta.10.inner
+    - meta.1
   scopes:
-    - string.unquoted.csv
-    - rainbow1.csv
-    - text.csv.column1.csv
+    - string.unquoted
+    - rainbow1
+    - text.csv.column1
 - source: F
   scopesBegin:
-    - meta.1.inner.csv
-    - meta.2.csv
+    - meta.1.inner
+    - meta.2
   scopes:
-    - string.unquoted.csv
-    - keyword.rainbow2.csv
-    - text.csv.column2.csv
+    - string.unquoted
+    - keyword.rainbow2
+    - text.csv.column2
 - source: G
   scopesBegin:
-    - meta.2.inner.csv
-    - meta.3.csv
+    - meta.2.inner
+    - meta.3
   scopes:
-    - string.unquoted.csv
-    - entity.name.function.rainbow3.csv
-    - text.csv.column3.csv
+    - string.unquoted
+    - entity.name.function.rainbow3
+    - text.csv.column3
 - source: H
   scopesBegin:
-    - meta.3.inner.csv
-    - meta.4.csv
+    - meta.3.inner
+    - meta.4
   scopes:
-    - string.unquoted.csv
-    - comment.rainbow4.csv
-    - text.csv.column4.csv
+    - string.unquoted
+    - comment.rainbow4
+    - text.csv.column4
 - source: I
   scopesBegin:
-    - meta.4.inner.csv
-    - meta.5.csv
+    - meta.4.inner
+    - meta.5
   scopes:
-    - string.unquoted.csv
-    - string.rainbow5.csv
-    - text.csv.column5.csv
+    - string.unquoted
+    - string.rainbow5
+    - text.csv.column5
 - source: J
   scopesBegin:
-    - meta.5.inner.csv
-    - meta.6.csv
+    - meta.5.inner
+    - meta.6
   scopes:
-    - string.unquoted.csv
-    - variable.parameter.rainbow6.csv
-    - text.csv.column6.csv
+    - string.unquoted
+    - variable.parameter.rainbow6
+    - text.csv.column6
 - source: K
   scopesBegin:
-    - meta.6.inner.csv
-    - meta.7.csv
+    - meta.6.inner
+    - meta.7
   scopes:
-    - string.unquoted.csv
-    - constant.numeric.rainbow7.csv
-    - text.csv.column7.csv
+    - string.unquoted
+    - constant.numeric.rainbow7
+    - text.csv.column7
 - source: L
   scopesBegin:
-    - meta.7.inner.csv
-    - meta.8.csv
+    - meta.7.inner
+    - meta.8
   scopes:
-    - string.unquoted.csv
-    - entity.name.type.rainbow8.csv
-    - text.csv.column8.csv
+    - string.unquoted
+    - entity.name.type.rainbow8
+    - text.csv.column8
 - source: M
   scopesBegin:
-    - meta.8.inner.csv
-    - meta.9.csv
+    - meta.8.inner
+    - meta.9
   scopes:
-    - string.unquoted.csv
-    - markup.bold.rainbow9.csv
-    - text.csv.column9.csv
+    - string.unquoted
+    - markup.bold.rainbow9
+    - text.csv.column9
 - source: 'N'
   scopesBegin:
-    - meta.9.inner.csv
-    - meta.10.csv
+    - meta.9.inner
+    - meta.10
   scopes:
-    - string.unquoted.csv
-    - invalid.rainbow10.csv
-    - text.csv.column10.csv
+    - string.unquoted
+    - invalid.rainbow10
+    - text.csv.column10
 - source: O
   scopesBegin:
-    - meta.10.inner.csv
-    - meta.1.csv
+    - meta.10.inner
+    - meta.1
   scopes:
-    - string.unquoted.csv
-    - rainbow1.csv
-    - text.csv.column1.csv
+    - string.unquoted
+    - rainbow1
+    - text.csv.column1
 - source: P
   scopesBegin:
-    - meta.1.inner.csv
-    - meta.2.csv
+    - meta.1.inner
+    - meta.2
   scopes:
-    - string.unquoted.csv
-    - keyword.rainbow2.csv
-    - text.csv.column2.csv
+    - string.unquoted
+    - keyword.rainbow2
+    - text.csv.column2
 - source: Q
   scopesBegin:
-    - meta.2.inner.csv
-    - meta.3.csv
+    - meta.2.inner
+    - meta.3
   scopes:
-    - string.unquoted.csv
-    - entity.name.function.rainbow3.csv
-    - text.csv.column3.csv
+    - string.unquoted
+    - entity.name.function.rainbow3
+    - text.csv.column3
 - source: R
   scopesBegin:
-    - meta.3.inner.csv
-    - meta.4.csv
+    - meta.3.inner
+    - meta.4
   scopes:
-    - string.unquoted.csv
-    - comment.rainbow4.csv
-    - text.csv.column4.csv
+    - string.unquoted
+    - comment.rainbow4
+    - text.csv.column4
 - source: S
   scopesBegin:
-    - meta.4.inner.csv
-    - meta.5.csv
+    - meta.4.inner
+    - meta.5
   scopes:
-    - string.unquoted.csv
-    - string.rainbow5.csv
-    - text.csv.column5.csv
+    - string.unquoted
+    - string.rainbow5
+    - text.csv.column5
 - source: T
   scopesBegin:
-    - meta.5.inner.csv
-    - meta.6.csv
+    - meta.5.inner
+    - meta.6
   scopes:
-    - string.unquoted.csv
-    - variable.parameter.rainbow6.csv
-    - text.csv.column6.csv
+    - string.unquoted
+    - variable.parameter.rainbow6
+    - text.csv.column6
 - source: U
   scopesBegin:
-    - meta.6.inner.csv
-    - meta.7.csv
+    - meta.6.inner
+    - meta.7
   scopes:
-    - string.unquoted.csv
-    - constant.numeric.rainbow7.csv
-    - text.csv.column7.csv
+    - string.unquoted
+    - constant.numeric.rainbow7
+    - text.csv.column7
 - source: V
   scopesBegin:
-    - meta.7.inner.csv
-    - meta.8.csv
+    - meta.7.inner
+    - meta.8
   scopes:
-    - string.unquoted.csv
-    - entity.name.type.rainbow8.csv
-    - text.csv.column8.csv
+    - string.unquoted
+    - entity.name.type.rainbow8
+    - text.csv.column8
 - source: W
   scopesBegin:
-    - meta.8.inner.csv
-    - meta.9.csv
+    - meta.8.inner
+    - meta.9
   scopes:
-    - string.unquoted.csv
-    - markup.bold.rainbow9.csv
-    - text.csv.column9.csv
+    - string.unquoted
+    - markup.bold.rainbow9
+    - text.csv.column9
 - source: X
   scopesBegin:
-    - meta.9.inner.csv
-    - meta.10.csv
+    - meta.9.inner
+    - meta.10
   scopes:
-    - string.unquoted.csv
-    - invalid.rainbow10.csv
-    - text.csv.column10.csv
+    - string.unquoted
+    - invalid.rainbow10
+    - text.csv.column10
 - source: 'Y'
   scopesBegin:
-    - meta.10.inner.csv
-    - meta.1.csv
+    - meta.10.inner
+    - meta.1
   scopes:
-    - string.unquoted.csv
-    - rainbow1.csv
-    - text.csv.column1.csv
+    - string.unquoted
+    - rainbow1
+    - text.csv.column1
 - source: Z
   scopesBegin:
-    - meta.1.inner.csv
-    - meta.2.csv
+    - meta.1.inner
+    - meta.2
   scopes:
-    - string.unquoted.csv
-    - keyword.rainbow2.csv
-    - text.csv.column2.csv
+    - string.unquoted
+    - keyword.rainbow2
+    - text.csv.column2
 - source: '0'
   scopesBegin:
-    - meta.2.inner.csv
-    - meta.3.csv
+    - meta.2.inner
+    - meta.3
   scopes:
-    - string.unquoted.csv
-    - entity.name.function.rainbow3.csv
-    - text.csv.column3.csv
+    - string.unquoted
+    - entity.name.function.rainbow3
+    - text.csv.column3
 - source: '1'
   scopesBegin:
-    - meta.3.inner.csv
-    - meta.4.csv
+    - meta.3.inner
+    - meta.4
   scopes:
-    - string.unquoted.csv
-    - comment.rainbow4.csv
-    - text.csv.column4.csv
+    - string.unquoted
+    - comment.rainbow4
+    - text.csv.column4
 - source: '2'
   scopesBegin:
-    - meta.4.inner.csv
-    - meta.5.csv
+    - meta.4.inner
+    - meta.5
   scopes:
-    - string.unquoted.csv
-    - string.rainbow5.csv
-    - text.csv.column5.csv
+    - string.unquoted
+    - string.rainbow5
+    - text.csv.column5
 - source: '3'
   scopesBegin:
-    - meta.5.inner.csv
-    - meta.6.csv
+    - meta.5.inner
+    - meta.6
   scopes:
-    - string.unquoted.csv
-    - variable.parameter.rainbow6.csv
-    - text.csv.column6.csv
+    - string.unquoted
+    - variable.parameter.rainbow6
+    - text.csv.column6
 - source: '4'
   scopesBegin:
-    - meta.6.inner.csv
-    - meta.7.csv
+    - meta.6.inner
+    - meta.7
   scopes:
-    - string.unquoted.csv
-    - constant.numeric.rainbow7.csv
-    - text.csv.column7.csv
+    - string.unquoted
+    - constant.numeric.rainbow7
+    - text.csv.column7
 - source: '5'
   scopesBegin:
-    - meta.7.inner.csv
-    - meta.8.csv
+    - meta.7.inner
+    - meta.8
   scopes:
-    - string.unquoted.csv
-    - entity.name.type.rainbow8.csv
-    - text.csv.column8.csv
+    - string.unquoted
+    - entity.name.type.rainbow8
+    - text.csv.column8
 - source: '6'
   scopesBegin:
-    - meta.8.inner.csv
-    - meta.9.csv
+    - meta.8.inner
+    - meta.9
   scopes:
-    - string.unquoted.csv
-    - markup.bold.rainbow9.csv
-    - text.csv.column9.csv
+    - string.unquoted
+    - markup.bold.rainbow9
+    - text.csv.column9
 - source: '7'
   scopesBegin:
-    - meta.9.inner.csv
-    - meta.10.csv
+    - meta.9.inner
+    - meta.10
   scopes:
-    - string.unquoted.csv
-    - invalid.rainbow10.csv
-    - text.csv.column10.csv
+    - string.unquoted
+    - invalid.rainbow10
+    - text.csv.column10
 - source: '8'
   scopesBegin:
-    - meta.10.inner.csv
-    - meta.1.csv
+    - meta.10.inner
+    - meta.1
   scopes:
-    - string.unquoted.csv
-    - rainbow1.csv
-    - text.csv.column1.csv
+    - string.unquoted
+    - rainbow1
+    - text.csv.column1
 - source: '9'
   scopesBegin:
-    - meta.1.inner.csv
-    - meta.2.csv
+    - meta.1.inner
+    - meta.2
   scopes:
-    - string.unquoted.csv
-    - keyword.rainbow2.csv
-    - text.csv.column2.csv
+    - string.unquoted
+    - keyword.rainbow2
+    - text.csv.column2
 - source: '!'
   scopesBegin:
-    - meta.2.inner.csv
-    - meta.3.csv
+    - meta.2.inner
+    - meta.3
   scopes:
-    - string.unquoted.csv
-    - entity.name.function.rainbow3.csv
-    - text.csv.column3.csv
+    - string.unquoted
+    - entity.name.function.rainbow3
+    - text.csv.column3
 - source: '@'
   scopesBegin:
-    - meta.3.inner.csv
-    - meta.4.csv
+    - meta.3.inner
+    - meta.4
   scopes:
-    - string.unquoted.csv
-    - comment.rainbow4.csv
-    - text.csv.column4.csv
+    - string.unquoted
+    - comment.rainbow4
+    - text.csv.column4
 - source: '#'
   scopesBegin:
-    - meta.4.inner.csv
-    - meta.5.csv
+    - meta.4.inner
+    - meta.5
   scopes:
-    - string.unquoted.csv
-    - string.rainbow5.csv
-    - text.csv.column5.csv
+    - string.unquoted
+    - string.rainbow5
+    - text.csv.column5
 - source: $
   scopesBegin:
-    - meta.5.inner.csv
-    - meta.6.csv
+    - meta.5.inner
+    - meta.6
   scopes:
-    - string.unquoted.csv
-    - variable.parameter.rainbow6.csv
-    - text.csv.column6.csv
+    - string.unquoted
+    - variable.parameter.rainbow6
+    - text.csv.column6
 - source: '%'
   scopesBegin:
-    - meta.6.inner.csv
-    - meta.7.csv
+    - meta.6.inner
+    - meta.7
   scopes:
-    - string.unquoted.csv
-    - constant.numeric.rainbow7.csv
-    - text.csv.column7.csv
+    - string.unquoted
+    - constant.numeric.rainbow7
+    - text.csv.column7
 - source: ^
   scopesBegin:
-    - meta.7.inner.csv
-    - meta.8.csv
+    - meta.7.inner
+    - meta.8
   scopes:
-    - string.unquoted.csv
-    - entity.name.type.rainbow8.csv
-    - text.csv.column8.csv
+    - string.unquoted
+    - entity.name.type.rainbow8
+    - text.csv.column8
 - source: '&'
   scopesBegin:
-    - meta.8.inner.csv
-    - meta.9.csv
+    - meta.8.inner
+    - meta.9
   scopes:
-    - string.unquoted.csv
-    - markup.bold.rainbow9.csv
-    - text.csv.column9.csv
+    - string.unquoted
+    - markup.bold.rainbow9
+    - text.csv.column9
 - source: '*'
   scopesBegin:
-    - meta.9.inner.csv
-    - meta.10.csv
+    - meta.9.inner
+    - meta.10
   scopes:
-    - string.unquoted.csv
-    - invalid.rainbow10.csv
-    - text.csv.column10.csv
+    - string.unquoted
+    - invalid.rainbow10
+    - text.csv.column10
 - source: (
   scopesBegin:
-    - meta.10.inner.csv
-    - meta.1.csv
+    - meta.10.inner
+    - meta.1
   scopes:
-    - string.unquoted.csv
-    - rainbow1.csv
-    - text.csv.column1.csv
+    - string.unquoted
+    - rainbow1
+    - text.csv.column1
 - source: )
   scopesBegin:
-    - meta.1.inner.csv
-    - meta.2.csv
+    - meta.1.inner
+    - meta.2
   scopes:
-    - string.unquoted.csv
-    - keyword.rainbow2.csv
-    - text.csv.column2.csv
+    - string.unquoted
+    - keyword.rainbow2
+    - text.csv.column2
 - source: '-'
   scopesBegin:
-    - meta.2.inner.csv
-    - meta.3.csv
+    - meta.2.inner
+    - meta.3
   scopes:
-    - string.unquoted.csv
-    - entity.name.function.rainbow3.csv
-    - text.csv.column3.csv
+    - string.unquoted
+    - entity.name.function.rainbow3
+    - text.csv.column3
 - source: _
   scopesBegin:
-    - meta.3.inner.csv
-    - meta.4.csv
+    - meta.3.inner
+    - meta.4
   scopes:
-    - string.unquoted.csv
-    - comment.rainbow4.csv
-    - text.csv.column4.csv
+    - string.unquoted
+    - comment.rainbow4
+    - text.csv.column4
 - source: +
   scopesBegin:
-    - meta.4.inner.csv
-    - meta.5.csv
+    - meta.4.inner
+    - meta.5
   scopes:
-    - string.unquoted.csv
-    - string.rainbow5.csv
-    - text.csv.column5.csv
+    - string.unquoted
+    - string.rainbow5
+    - text.csv.column5
 - source: '='
   scopesBegin:
-    - meta.5.inner.csv
-    - meta.6.csv
+    - meta.5.inner
+    - meta.6
   scopes:
-    - string.unquoted.csv
-    - variable.parameter.rainbow6.csv
-    - text.csv.column6.csv
+    - string.unquoted
+    - variable.parameter.rainbow6
+    - text.csv.column6
 - source: '?'
   scopesBegin:
-    - meta.6.inner.csv
-    - meta.7.csv
+    - meta.6.inner
+    - meta.7
   scopes:
-    - string.unquoted.csv
-    - constant.numeric.rainbow7.csv
-    - text.csv.column7.csv
+    - string.unquoted
+    - constant.numeric.rainbow7
+    - text.csv.column7
 - source: .
   scopesBegin:
-    - meta.7.inner.csv
-    - meta.8.csv
+    - meta.7.inner
+    - meta.8
   scopes:
-    - string.unquoted.csv
-    - entity.name.type.rainbow8.csv
-    - text.csv.column8.csv
+    - string.unquoted
+    - entity.name.type.rainbow8
+    - text.csv.column8
 - source: ':'
   scopesBegin:
-    - meta.8.inner.csv
-    - meta.9.csv
+    - meta.8.inner
+    - meta.9
   scopes:
-    - string.unquoted.csv
-    - markup.bold.rainbow9.csv
-    - text.csv.column9.csv
+    - string.unquoted
+    - markup.bold.rainbow9
+    - text.csv.column9
 - source: /
   scopesBegin:
-    - meta.9.inner.csv
-    - meta.10.csv
+    - meta.9.inner
+    - meta.10
   scopes:
-    - string.unquoted.csv
-    - invalid.rainbow10.csv
-    - text.csv.column10.csv
+    - string.unquoted
+    - invalid.rainbow10
+    - text.csv.column10
 - source: \
   scopesBegin:
-    - meta.10.inner.csv
-    - meta.1.csv
+    - meta.10.inner
+    - meta.1
   scopes:
-    - string.unquoted.csv
-    - rainbow1.csv
-    - text.csv.column1.csv
+    - string.unquoted
+    - rainbow1
+    - text.csv.column1
 - source: '`'
   scopes:
-    - meta.1.inner.csv
-    - meta.2.csv
-    - string.unquoted.csv
-    - keyword.rainbow2.csv
-    - text.csv.column2.csv
+    - meta.1.inner
+    - meta.2
+    - string.unquoted
+    - keyword.rainbow2
+    - text.csv.column2
   scopesEnd:
-    - meta.1.inner.csv
-    - meta.2.csv
-    - meta.2.inner.csv
-    - meta.3.csv
-    - meta.3.inner.csv
-    - meta.4.csv
-    - meta.4.inner.csv
-    - meta.5.csv
-    - meta.5.inner.csv
-    - meta.6.csv
-    - meta.6.inner.csv
-    - meta.7.csv
-    - meta.7.inner.csv
-    - meta.8.csv
-    - meta.8.inner.csv
-    - meta.9.csv
-    - meta.9.inner.csv
-    - meta.10.csv
-    - meta.10.inner.csv
-    - meta.1.csv
-    - meta.1.inner.csv
-    - meta.2.csv
-    - meta.2.inner.csv
-    - meta.3.csv
-    - meta.3.inner.csv
-    - meta.4.csv
-    - meta.4.inner.csv
-    - meta.5.csv
-    - meta.5.inner.csv
-    - meta.6.csv
-    - meta.6.inner.csv
-    - meta.7.csv
-    - meta.7.inner.csv
-    - meta.8.csv
-    - meta.8.inner.csv
-    - meta.9.csv
-    - meta.9.inner.csv
-    - meta.10.csv
-    - meta.10.inner.csv
-    - meta.1.csv
-    - meta.1.inner.csv
-    - meta.2.csv
-    - meta.2.inner.csv
-    - meta.3.csv
-    - meta.3.inner.csv
-    - meta.4.csv
-    - meta.4.inner.csv
-    - meta.5.csv
-    - meta.5.inner.csv
-    - meta.6.csv
-    - meta.6.inner.csv
-    - meta.7.csv
-    - meta.7.inner.csv
-    - meta.8.csv
-    - meta.8.inner.csv
-    - meta.9.csv
-    - meta.9.inner.csv
-    - meta.10.csv
-    - meta.10.inner.csv
-    - meta.1.csv
-    - meta.1.inner.csv
-    - meta.2.csv
-    - meta.2.inner.csv
-    - meta.3.csv
-    - meta.3.inner.csv
-    - meta.4.csv
-    - meta.4.inner.csv
-    - meta.5.csv
-    - meta.5.inner.csv
-    - meta.6.csv
-    - meta.6.inner.csv
-    - meta.7.csv
-    - meta.7.inner.csv
-    - meta.8.csv
-    - meta.8.inner.csv
-    - meta.9.csv
-    - meta.9.inner.csv
-    - meta.10.csv
-    - meta.10.inner.csv
-    - meta.1.csv
-    - meta.1.inner.csv
-    - meta.2.csv
-    - meta.2.inner.csv
-    - meta.3.csv
-    - meta.3.inner.csv
-    - meta.4.csv
-    - meta.4.inner.csv
-    - meta.5.csv
-    - meta.5.inner.csv
-    - meta.6.csv
-    - meta.6.inner.csv
-    - meta.7.csv
-    - meta.7.inner.csv
-    - meta.8.csv
-    - meta.8.inner.csv
-    - meta.9.csv
-    - meta.9.inner.csv
-    - meta.10.csv
-    - meta.10.inner.csv
-    - meta.1.csv
-    - meta.1.inner.csv
-    - meta.2.csv
-    - meta.2.inner.csv
-    - meta.3.csv
-    - meta.3.inner.csv
-    - meta.4.csv
-    - meta.4.inner.csv
-    - meta.5.csv
-    - meta.5.inner.csv
-    - meta.6.csv
-    - meta.6.inner.csv
-    - meta.7.csv
-    - meta.7.inner.csv
-    - meta.8.csv
-    - meta.8.inner.csv
-    - meta.9.csv
-    - meta.9.inner.csv
-    - meta.10.csv
-    - meta.10.inner.csv
-    - meta.1.csv
-    - meta.1.inner.csv
-    - meta.2.csv
-    - meta.2.inner.csv
-    - meta.3.csv
-    - meta.3.inner.csv
-    - meta.4.csv
-    - meta.4.inner.csv
-    - meta.5.csv
-    - meta.5.inner.csv
-    - meta.6.csv
-    - meta.6.inner.csv
-    - meta.7.csv
-    - meta.7.inner.csv
-    - meta.8.csv
-    - meta.8.inner.csv
-    - meta.9.csv
-    - meta.9.inner.csv
-    - meta.10.csv
-    - meta.10.inner.csv
-    - meta.1.csv
-    - meta.1.inner.csv
-    - meta.2.csv
-    - meta.2.inner.csv
-    - meta.3.csv
-    - meta.3.inner.csv
-    - meta.4.csv
-    - meta.4.inner.csv
-    - meta.5.csv
-    - meta.5.inner.csv
-    - meta.6.csv
-    - meta.6.inner.csv
-    - meta.7.csv
-    - meta.7.inner.csv
-    - meta.8.csv
-    - meta.8.inner.csv
-    - meta.9.csv
-    - meta.9.inner.csv
-    - meta.10.csv
-    - meta.10.inner.csv
-    - meta.1.csv
+    - meta.1.inner
+    - meta.2
+    - meta.2.inner
+    - meta.3
+    - meta.3.inner
+    - meta.4
+    - meta.4.inner
+    - meta.5
+    - meta.5.inner
+    - meta.6
+    - meta.6.inner
+    - meta.7
+    - meta.7.inner
+    - meta.8
+    - meta.8.inner
+    - meta.9
+    - meta.9.inner
+    - meta.10
+    - meta.10.inner
+    - meta.1
+    - meta.1.inner
+    - meta.2
+    - meta.2.inner
+    - meta.3
+    - meta.3.inner
+    - meta.4
+    - meta.4.inner
+    - meta.5
+    - meta.5.inner
+    - meta.6
+    - meta.6.inner
+    - meta.7
+    - meta.7.inner
+    - meta.8
+    - meta.8.inner
+    - meta.9
+    - meta.9.inner
+    - meta.10
+    - meta.10.inner
+    - meta.1
+    - meta.1.inner
+    - meta.2
+    - meta.2.inner
+    - meta.3
+    - meta.3.inner
+    - meta.4
+    - meta.4.inner
+    - meta.5
+    - meta.5.inner
+    - meta.6
+    - meta.6.inner
+    - meta.7
+    - meta.7.inner
+    - meta.8
+    - meta.8.inner
+    - meta.9
+    - meta.9.inner
+    - meta.10
+    - meta.10.inner
+    - meta.1
+    - meta.1.inner
+    - meta.2
+    - meta.2.inner
+    - meta.3
+    - meta.3.inner
+    - meta.4
+    - meta.4.inner
+    - meta.5
+    - meta.5.inner
+    - meta.6
+    - meta.6.inner
+    - meta.7
+    - meta.7.inner
+    - meta.8
+    - meta.8.inner
+    - meta.9
+    - meta.9.inner
+    - meta.10
+    - meta.10.inner
+    - meta.1
+    - meta.1.inner
+    - meta.2
+    - meta.2.inner
+    - meta.3
+    - meta.3.inner
+    - meta.4
+    - meta.4.inner
+    - meta.5
+    - meta.5.inner
+    - meta.6
+    - meta.6.inner
+    - meta.7
+    - meta.7.inner
+    - meta.8
+    - meta.8.inner
+    - meta.9
+    - meta.9.inner
+    - meta.10
+    - meta.10.inner
+    - meta.1
+    - meta.1.inner
+    - meta.2
+    - meta.2.inner
+    - meta.3
+    - meta.3.inner
+    - meta.4
+    - meta.4.inner
+    - meta.5
+    - meta.5.inner
+    - meta.6
+    - meta.6.inner
+    - meta.7
+    - meta.7.inner
+    - meta.8
+    - meta.8.inner
+    - meta.9
+    - meta.9.inner
+    - meta.10
+    - meta.10.inner
+    - meta.1
+    - meta.1.inner
+    - meta.2
+    - meta.2.inner
+    - meta.3
+    - meta.3.inner
+    - meta.4
+    - meta.4.inner
+    - meta.5
+    - meta.5.inner
+    - meta.6
+    - meta.6.inner
+    - meta.7
+    - meta.7.inner
+    - meta.8
+    - meta.8.inner
+    - meta.9
+    - meta.9.inner
+    - meta.10
+    - meta.10.inner
+    - meta.1
+    - meta.1.inner
+    - meta.2
+    - meta.2.inner
+    - meta.3
+    - meta.3.inner
+    - meta.4
+    - meta.4.inner
+    - meta.5
+    - meta.5.inner
+    - meta.6
+    - meta.6.inner
+    - meta.7
+    - meta.7.inner
+    - meta.8
+    - meta.8.inner
+    - meta.9
+    - meta.9.inner
+    - meta.10
+    - meta.10.inner
+    - meta.1
 - source: a
   scopes:
-    - string.unquoted.csv
-    - rainbow1.csv
-    - text.csv.column1.csv
+    - string.unquoted
+    - rainbow1
+    - text.csv.column1
 - source: f
   scopes:
-    - meta.1.inner.csv
-    - meta.2.csv
-    - string.unquoted.csv
-    - keyword.rainbow2.csv
-    - text.csv.column2.csv
+    - meta.1.inner
+    - meta.2
+    - string.unquoted
+    - keyword.rainbow2
+    - text.csv.column2
