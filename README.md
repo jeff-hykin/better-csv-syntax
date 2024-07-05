@@ -17,7 +17,7 @@ You'll probably like this as well: [The Better Syntax Megapack](https://marketpl
 to add a new csv-type
 1. edit main.rb, there's a list a the top
 2. edit the commands/test
-3. edit the package.json, make sure the "text._sv" matches the main.rb one
-4. run `commands/project/build_and_test
+3. edit the package.json
+4. run `commands/project/build_and_test`
 
  -->
