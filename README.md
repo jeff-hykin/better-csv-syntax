@@ -3,11 +3,11 @@
 Like rainbow CSV but correctly handles quotes! For example:
 
 
-### After (Correctly Parsed)
+### After (e.g. parsed correctly)
 
 <img width="1236" alt="Screen Shot 2024-07-05 at 4 43 12 PM" src="https://github.com/jeff-hykin/textmate-tester/assets/17692058/1055f836-b5ff-423d-ba04-cc6d6527df4e">
 
-### Before (couldn't handle quotes or newlines)
+### Before (bad parsing, can't handle quotes or newlines)
 
 <img width="1354" alt="Screen Shot 2024-07-05 at 4 41 17 PM" src="https://github.com/jeff-hykin/textmate-tester/assets/17692058/f1d5307d-ccb2-47df-8252-c6df072a3750">
 
