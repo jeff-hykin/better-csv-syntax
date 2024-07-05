@@ -1,0 +1,409 @@
+{
+  "version": "",
+  "name": "CSV",
+  "scopeName": "text.csv",
+  "fileTypes": [
+    "csv"
+  ],
+  "patterns": [
+    {
+      "include": "#item"
+    }
+  ],
+  "repository": {
+    "escape": {
+      "match": "\"\"",
+      "name": "constant.character.escape.csv"
+    },
+    "item": {
+      "begin": "(?:\\G|\\A)",
+      "end": "(?:(,)|\\n)",
+      "beginCaptures": {
+      },
+      "endCaptures": {
+        "1": {
+          "name": "punctuation.definition.entry.csv"
+        }
+      },
+      "patterns": [
+        {
+          "match": "(?:\\G|\\A)[^\",]*(?=,|\\n)",
+          "name": "string.unquoted.csv rainbow1.csv csv.column1.csv"
+        },
+        {
+          "begin": "(?:\\G|\\A)(\")",
+          "end": "\"",
+          "beginCaptures": {
+            "1": {
+              "name": "punctuation.definition.string.csv"
+            }
+          },
+          "endCaptures": {
+            "0": {
+              "name": "punctuation.definition.string.csv"
+            }
+          },
+          "name": "string.quoted.double.csv rainbow1.csv csv.column1.csv",
+          "patterns": [
+            {
+              "include": "#escape"
+            }
+          ],
+          "applyEndPatternLast": 1
+        },
+        {
+          "begin": "(?:\\G|\\A)",
+          "end": "(?:(,)|\\n)",
+          "beginCaptures": {
+          },
+          "endCaptures": {
+            "1": {
+              "name": "punctuation.definition.entry.csv"
+            }
+          },
+          "patterns": [
+            {
+              "match": "(?:\\G|\\A)[^\",]*(?=,|\\n)",
+              "name": "string.unquoted.csv keyword.rainbow2.csv csv.column2.csv"
+            },
+            {
+              "begin": "(?:\\G|\\A)(\")",
+              "end": "\"",
+              "beginCaptures": {
+                "1": {
+                  "name": "punctuation.definition.string.csv"
+                }
+              },
+              "endCaptures": {
+                "0": {
+                  "name": "punctuation.definition.string.csv"
+                }
+              },
+              "name": "string.quoted.double.csv keyword.rainbow2.csv csv.column2.csv",
+              "patterns": [
+                {
+                  "include": "#escape"
+                }
+              ],
+              "applyEndPatternLast": 1
+            },
+            {
+              "begin": "(?:\\G|\\A)",
+              "end": "(?:(,)|\\n)",
+              "beginCaptures": {
+              },
+              "endCaptures": {
+                "1": {
+                  "name": "punctuation.definition.entry.csv"
+                }
+              },
+              "patterns": [
+                {
+                  "match": "(?:\\G|\\A)[^\",]*(?=,|\\n)",
+                  "name": "string.unquoted.csv entity.name.function.rainbow3.csv csv.column3.csv"
+                },
+                {
+                  "begin": "(?:\\G|\\A)(\")",
+                  "end": "\"",
+                  "beginCaptures": {
+                    "1": {
+                      "name": "punctuation.definition.string.csv"
+                    }
+                  },
+                  "endCaptures": {
+                    "0": {
+                      "name": "punctuation.definition.string.csv"
+                    }
+                  },
+                  "name": "string.quoted.double.csv entity.name.function.rainbow3.csv csv.column3.csv",
+                  "patterns": [
+                    {
+                      "include": "#escape"
+                    }
+                  ],
+                  "applyEndPatternLast": 1
+                },
+                {
+                  "begin": "(?:\\G|\\A)",
+                  "end": "(?:(,)|\\n)",
+                  "beginCaptures": {
+                  },
+                  "endCaptures": {
+                    "1": {
+                      "name": "punctuation.definition.entry.csv"
+                    }
+                  },
+                  "patterns": [
+                    {
+                      "match": "(?:\\G|\\A)[^\",]*(?=,|\\n)",
+                      "name": "string.unquoted.csv comment.rainbow4.csv csv.column4.csv"
+                    },
+                    {
+                      "begin": "(?:\\G|\\A)(\")",
+                      "end": "\"",
+                      "beginCaptures": {
+                        "1": {
+                          "name": "punctuation.definition.string.csv"
+                        }
+                      },
+                      "endCaptures": {
+                        "0": {
+                          "name": "punctuation.definition.string.csv"
+                        }
+                      },
+                      "name": "string.quoted.double.csv comment.rainbow4.csv csv.column4.csv",
+                      "patterns": [
+                        {
+                          "include": "#escape"
+                        }
+                      ],
+                      "applyEndPatternLast": 1
+                    },
+                    {
+                      "begin": "(?:\\G|\\A)",
+                      "end": "(?:(,)|\\n)",
+                      "beginCaptures": {
+                      },
+                      "endCaptures": {
+                        "1": {
+                          "name": "punctuation.definition.entry.csv"
+                        }
+                      },
+                      "patterns": [
+                        {
+                          "match": "(?:\\G|\\A)[^\",]*(?=,|\\n)",
+                          "name": "string.unquoted.csv string.rainbow5.csv csv.column5.csv"
+                        },
+                        {
+                          "begin": "(?:\\G|\\A)(\")",
+                          "end": "\"",
+                          "beginCaptures": {
+                            "1": {
+                              "name": "punctuation.definition.string.csv"
+                            }
+                          },
+                          "endCaptures": {
+                            "0": {
+                              "name": "punctuation.definition.string.csv"
+                            }
+                          },
+                          "name": "string.quoted.double.csv string.rainbow5.csv csv.column5.csv",
+                          "patterns": [
+                            {
+                              "include": "#escape"
+                            }
+                          ],
+                          "applyEndPatternLast": 1
+                        },
+                        {
+                          "begin": "(?:\\G|\\A)",
+                          "end": "(?:(,)|\\n)",
+                          "beginCaptures": {
+                          },
+                          "endCaptures": {
+                            "1": {
+                              "name": "punctuation.definition.entry.csv"
+                            }
+                          },
+                          "patterns": [
+                            {
+                              "match": "(?:\\G|\\A)[^\",]*(?=,|\\n)",
+                              "name": "string.unquoted.csv variable.parameter.rainbow6.csv csv.column6.csv"
+                            },
+                            {
+                              "begin": "(?:\\G|\\A)(\")",
+                              "end": "\"",
+                              "beginCaptures": {
+                                "1": {
+                                  "name": "punctuation.definition.string.csv"
+                                }
+                              },
+                              "endCaptures": {
+                                "0": {
+                                  "name": "punctuation.definition.string.csv"
+                                }
+                              },
+                              "name": "string.quoted.double.csv variable.parameter.rainbow6.csv csv.column6.csv",
+                              "patterns": [
+                                {
+                                  "include": "#escape"
+                                }
+                              ],
+                              "applyEndPatternLast": 1
+                            },
+                            {
+                              "begin": "(?:\\G|\\A)",
+                              "end": "(?:(,)|\\n)",
+                              "beginCaptures": {
+                              },
+                              "endCaptures": {
+                                "1": {
+                                  "name": "punctuation.definition.entry.csv"
+                                }
+                              },
+                              "patterns": [
+                                {
+                                  "match": "(?:\\G|\\A)[^\",]*(?=,|\\n)",
+                                  "name": "string.unquoted.csv constant.numeric.rainbow7.csv csv.column7.csv"
+                                },
+                                {
+                                  "begin": "(?:\\G|\\A)(\")",
+                                  "end": "\"",
+                                  "beginCaptures": {
+                                    "1": {
+                                      "name": "punctuation.definition.string.csv"
+                                    }
+                                  },
+                                  "endCaptures": {
+                                    "0": {
+                                      "name": "punctuation.definition.string.csv"
+                                    }
+                                  },
+                                  "name": "string.quoted.double.csv constant.numeric.rainbow7.csv csv.column7.csv",
+                                  "patterns": [
+                                    {
+                                      "include": "#escape"
+                                    }
+                                  ],
+                                  "applyEndPatternLast": 1
+                                },
+                                {
+                                  "begin": "(?:\\G|\\A)",
+                                  "end": "(?:(,)|\\n)",
+                                  "beginCaptures": {
+                                  },
+                                  "endCaptures": {
+                                    "1": {
+                                      "name": "punctuation.definition.entry.csv"
+                                    }
+                                  },
+                                  "patterns": [
+                                    {
+                                      "match": "(?:\\G|\\A)[^\",]*(?=,|\\n)",
+                                      "name": "string.unquoted.csv entity.name.type.rainbow8.csv csv.column8.csv"
+                                    },
+                                    {
+                                      "begin": "(?:\\G|\\A)(\")",
+                                      "end": "\"",
+                                      "beginCaptures": {
+                                        "1": {
+                                          "name": "punctuation.definition.string.csv"
+                                        }
+                                      },
+                                      "endCaptures": {
+                                        "0": {
+                                          "name": "punctuation.definition.string.csv"
+                                        }
+                                      },
+                                      "name": "string.quoted.double.csv entity.name.type.rainbow8.csv csv.column8.csv",
+                                      "patterns": [
+                                        {
+                                          "include": "#escape"
+                                        }
+                                      ],
+                                      "applyEndPatternLast": 1
+                                    },
+                                    {
+                                      "begin": "(?:\\G|\\A)",
+                                      "end": "(?:(,)|\\n)",
+                                      "beginCaptures": {
+                                      },
+                                      "endCaptures": {
+                                        "1": {
+                                          "name": "punctuation.definition.entry.csv"
+                                        }
+                                      },
+                                      "patterns": [
+                                        {
+                                          "match": "(?:\\G|\\A)[^\",]*(?=,|\\n)",
+                                          "name": "string.unquoted.csv markup.bold.rainbow9.csv csv.column9.csv"
+                                        },
+                                        {
+                                          "begin": "(?:\\G|\\A)(\")",
+                                          "end": "\"",
+                                          "beginCaptures": {
+                                            "1": {
+                                              "name": "punctuation.definition.string.csv"
+                                            }
+                                          },
+                                          "endCaptures": {
+                                            "0": {
+                                              "name": "punctuation.definition.string.csv"
+                                            }
+                                          },
+                                          "name": "string.quoted.double.csv markup.bold.rainbow9.csv csv.column9.csv",
+                                          "patterns": [
+                                            {
+                                              "include": "#escape"
+                                            }
+                                          ],
+                                          "applyEndPatternLast": 1
+                                        },
+                                        {
+                                          "begin": "(?:\\G|\\A)",
+                                          "end": "(?:(,)|\\n)",
+                                          "beginCaptures": {
+                                          },
+                                          "endCaptures": {
+                                            "1": {
+                                              "name": "punctuation.definition.entry.csv"
+                                            }
+                                          },
+                                          "patterns": [
+                                            {
+                                              "match": "(?:\\G|\\A)[^\",]*(?=,|\\n)",
+                                              "name": "string.unquoted.csv invalid.rainbow10.csv csv.column10.csv"
+                                            },
+                                            {
+                                              "begin": "(?:\\G|\\A)(\")",
+                                              "end": "\"",
+                                              "beginCaptures": {
+                                                "1": {
+                                                  "name": "punctuation.definition.string.csv"
+                                                }
+                                              },
+                                              "endCaptures": {
+                                                "0": {
+                                                  "name": "punctuation.definition.string.csv"
+                                                }
+                                              },
+                                              "name": "string.quoted.double.csv invalid.rainbow10.csv csv.column10.csv",
+                                              "patterns": [
+                                                {
+                                                  "include": "#escape"
+                                                }
+                                              ],
+                                              "applyEndPatternLast": 1
+                                            }
+                                          ],
+                                          "applyEndPatternLast": 1
+                                        }
+                                      ],
+                                      "applyEndPatternLast": 1
+                                    }
+                                  ],
+                                  "applyEndPatternLast": 1
+                                }
+                              ],
+                              "applyEndPatternLast": 1
+                            }
+                          ],
+                          "applyEndPatternLast": 1
+                        }
+                      ],
+                      "applyEndPatternLast": 1
+                    }
+                  ],
+                  "applyEndPatternLast": 1
+                }
+              ],
+              "applyEndPatternLast": 1
+            }
+          ],
+          "applyEndPatternLast": 1
+        }
+      ],
+      "applyEndPatternLast": 1
+    }
+  }
+}
